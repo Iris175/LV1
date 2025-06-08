@@ -91,6 +91,17 @@ a{
     padding: 0 12px;
 }
 
+.item-layout{
+    max-width: 416px;
+}
+
+.describe-layout{
+    max-width: 636px;
+}
+
+.m24{
+    margin-bottom: 24px;
+}
 
 /* Content內容 */
 
@@ -232,6 +243,10 @@ a{
     }
 }
 
+.banner-introduce2 .item{
+    max-width: 636px;
+}
+
 /* 內容 */
 .search-item{
     max-width: 416px;
@@ -266,16 +281,6 @@ a{
     flex-wrap: wrap;
 }
 
-.item{
-    max-width: 416px;
-}
-
-@media (max-width: 768px) {
-    .item{
-        max-width: 100%;
-    }
-}
-
 .item img{
     margin: 40px 0px 16px 0px;
 }
@@ -299,6 +304,12 @@ a{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .item{
+        max-width: 100%;
+    }
 }
 
 .item .hashtag{
@@ -382,10 +393,6 @@ a{
     color: var(--gray-dark);
 }
 
-.page-icon a{
-    padding: ;
-}
-
 .page-icon a:hover{
     color: var(--main-blue);
 }
@@ -411,6 +418,88 @@ a{
 }
 
 .contact-icon img{
+    margin-left: 4px;
+}
+
+/* Page2 Blog */
+/* content內容 */
+.content2{
+    display: flex;
+    justify-content: center;
+}
+
+.describe-item h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-blue);
+    margin: 24px 0;
+}
+
+.describe-item h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.describe-item ul{
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+
+.describe-item ol{
+    list-style: decimal;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+
+.describe-item span{
+    color: var(--main-blue);
+}
+
+.describe-item a{
+    text-decoration-line: underline;
+    color: var(--main-blue);
+}
+
+.tip-p{
+    background-color: #ededed;
+    border-radius: 24px;
+    font-weight: 700;
+    padding: 24px;
+}
+
+.describe-content{
+    margin-top: 48px;
+}
+
+.page2{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0 80px 0;
+}
+
+@media (max-width: 768px) {
+    .page2{
+        margin-bottom: 64px;
+    }
+
+.page2-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    border: 1px solid #000;
+    border-radius: 40px;
+}
+
+.page2-icon img{
+    width: 24px;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.page2-icon p{
     margin-left: 4px;
 }
 
